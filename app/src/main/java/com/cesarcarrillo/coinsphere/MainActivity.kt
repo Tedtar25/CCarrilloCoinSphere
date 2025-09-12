@@ -6,11 +6,16 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -42,57 +47,97 @@ fun app() {
         item {
             Text(
                 text = "CoinSphere",
-                fontSize = 5.sp,
+                fontSize = 24.sp,
                 color = Color.White
             )
 
-        }
-
-        item() {
-            Text(
-                text = "Global Market Cap",
-                fontSize = 3.sp,
-                color = Color.Gray,
-                modifier = Modifier.padding(12.dp)
-            )
-
-            Text(
-                text = "$1.82T",
-                fontSize = 5.sp,
-                color = Color.White
-                //modifier = Modifier.padding(5.dp)
-            )
-        }
-        
-        item {
-            Text(
-                text = "Fear & Greed",
-                fontSize = 3.sp,
-                color = Color.Gray,
-                modifier = Modifier.padding(12.dp)
-            )
-
-            Text(
-                text = "Neutral (54)",
-                fontSize = 5.sp,
-                color = Color.White
-            )
         }
 
         item {
-            Text(
-                text = "Altcoin Season",
-                fontSize = 3.sp,
-                color = Color.Gray,
-                modifier = Modifier.padding(12.dp)
-            )
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp)
+                ) {
+                    Text(
+                        text = "Global Market Cap",
+                        fontSize = 14.sp,
+                        color = Color.Gray
+                    )
 
-            Text(
-                text = "No",
-                fontSize = 5.sp,
-                color = Color.White
-                //modifier = Modifier.padding(5.dp)
-            )
+                    Text(
+                        text = "$1.82T",
+                        fontSize = 24.sp,
+                        color = Color.White
+                    )
+                }
+            }
+        }
+
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp)
+                ) {
+                    Text(
+                        text = "Fear & Greed",
+                        fontSize = 14.sp,
+                        color = Color.Gray
+                    )
+
+                    Text(
+                        text = "Neutral (54)",
+                        fontSize = 24.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp)
+                ) {
+                    Text(
+                        text = "Altcoin Season",
+                        fontSize = 14.sp,
+                        color = Color.Gray
+                    )
+
+                    Text(
+                        text = "No",
+                        fontSize = 24.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
         }
 
         item {
@@ -104,17 +149,69 @@ fun app() {
             ) {
                 item {
                     Text(
-                        text = "#    Name",
-                        fontSize = 3.sp,
+                        text = "#    Name                                                      Price",
+                        fontSize = 14.sp,
                         color = Color.Gray
                     )
                 }
-
+                    /*
                 item {
-                    Text(
+                Text(
                         text = "Price",
-                        fontSize = 3.sp,
+                        fontSize = 16.sp,
                         color = Color.Gray
+                    )
+                }
+                */
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "1. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "1. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
                     )
                 }
 
