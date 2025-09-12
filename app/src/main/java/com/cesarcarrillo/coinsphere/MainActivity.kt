@@ -196,6 +196,19 @@ fun app() {
                     )
                 }
 
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
                 Row(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     modifier = Modifier
@@ -203,7 +216,199 @@ fun app() {
                         .padding(16.dp)
                 ) {
                     Text(
-                        text = "1. Bitcoin (BTC)",
+                        text = "2. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "3. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "4. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "5. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "6. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "7. Bitcoin (BTC)",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+
+                    Text(
+                        text = "$27,000",
+                        fontSize = 14.sp,
+                        color = Color.White
+                    )
+                }
+
+            }
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = Color(0xFF2A2E42)
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                ) {
+                    Text(
+                        text = "8. Bitcoin (BTC)",
                         fontSize = 14.sp,
                         color = Color.White
                     )
@@ -219,6 +424,5 @@ fun app() {
         }
 
     }
-
 
 }
